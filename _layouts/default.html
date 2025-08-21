@@ -16,10 +16,10 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      <h1 class="project-name">{{ Angelica's Portfolio Site | default: Angelica's Portfolio Site | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ A creative IT Professional | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+        <a href="{{ https://gellycodes.github.io/Ajones.github.io/ }}" class="btn">View on GitHub</a>
       {% endif %}
       {% if site.show_downloads %}
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
@@ -28,7 +28,12 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-      {{ content }}
+      <h3>{{ Here are my Projects }}</h3>
+      <a href="{{ hipstirred/index.html }}" class="btn">Hipstirred Website</a>
+      <a href="{{ generic/index.html }}" class="btn">Generic Website</a>
+      <a href="{{ coolcompany/index.html }}" class="btn">Cool Company</a>
+
+
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
