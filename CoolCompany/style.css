@@ -1,0 +1,169 @@
+
+body{
+    font-family: "Rubik", sans-serif;
+}
+
+/*use borders instead of horizontal rule*/
+.bottom-horizontal-rule{
+    border-bottom: 1px solid lightgray;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 1.5rem;
+}
+
+button{
+    background-color: rgb(15, 110, 15);
+    border: none;
+    color: rgb(247, 245, 243);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    /*start transition -show duration of transition*/
+    transition: background-color 1s linear;
+    
+}
+
+/*button change or transition when hovering over it*/
+button:hover{
+    background-color: pink;
+    color: black;
+	padding: .5rem 1rem;
+	transition: all 1s ease;
+}
+
+button, label, input{
+    display: block;
+    /* makes all elements stack on each other */
+}
+
+
+h2{
+    font-size: 2.5rem;
+}
+
+
+.horizontal-rule-placeholder{
+    border-bottom: 3px solid orange;
+    margin-bottom: 2rem;    
+}
+
+/* ensure this stays at the very top */
+.fixed-top-piece{
+    /* left: 2rem;
+	margin-top: 0; */
+    background-color: white;
+	position: sticky;
+    /*position: fixed;
+    caused nav bar to be on place*/
+	/* right: 0; */
+	top: 0;
+    /* bottom: 0; */
+}
+footer{
+    color: rgb(125, 153, 218);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+form{
+    align-items: center;
+    background-color: lightgray;
+    box-sizing: border-box;
+    /* padding: 2rem; */
+    /* margin: auto; */
+    padding: 1rem;
+    width: 50%;
+    /* padding all around the form */
+}
+/* includes form and text  */
+.freetrial-form{
+    border-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding-bottom: 2.5rem;
+}
+/* words of free trial class */
+.free-trialwords{
+    display: block;
+    border-right: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* individual selectors for the form */
+input, select, textarea, button{
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    /*puts spacing between input elements*/
+    width: 100%;
+}
+
+input{
+    margin-bottom: 1.5rem;
+}
+
+/* group of tiles */
+.selling-tiles{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+}
+
+.small-text{
+    color: rgb(109, 106, 106);
+    font-weight: normal;
+}
+
+/* each individual tile */
+.tiles1, .tiles2, .tiles3, .tiles4 {
+    color:rgb(249, 248, 247);
+    flex-direction: column;
+    padding: 1rem;
+    /* width: 30%; */
+}
+
+.tiles1{
+    background-color: rgb(203, 90, 90);
+    
+}
+
+
+.tiles2{
+    background-color: purple;
+}
+.tiles3{
+    background-color: rgb(215, 182, 51);
+    
+}
+.tiles4{
+    background-color: rgb(42, 199, 216);
+}
+
+.tiles1:hover{
+    /*on hover makes tiles raise slightly*/
+    transform: translateY(-2rem);
+}
+.tiles2:hover{
+    /*on hover makes tiles raise slightly*/
+    transform: translateY(-2rem);
+}
+.tiles3:hover{
+    /*on hover makes tiles raise slightly*/
+    transform: translateY(-2rem);
+}
+.tiles4:hover{
+    /*on hover makes tiles raise slightly*/
+    transform: translateY(-2rem);
+}
+
+.top-piece{
+    /* font or typeface */
+    font-family: "Sansita Swashed", serif;
+    font-size: small;
+    justify-content: center;
+    display: flex;
+    
+}
+

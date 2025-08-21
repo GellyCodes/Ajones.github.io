@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+body{
+    font-family: “Helvetica Neue”, serif;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+button{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.description{
+    /*add white background*/
+    background-color: white;
+    border-bottom: 4rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.foodcards{
+    display: grid;
+    gap: 3rem;
+    /* max-width: 400px; */
+    /*food cards are 400px wide*/
+}
+footer a{
+    display: block;
+    text-decoration: none;
+}
+
+.hero{
+    align-items: center;
+    background-image: url("images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content:center;
+    text-align: center;
+}
+
+
+.hero a{
+    text-decoration: none;
+}
+
+.hero button{
+    color: white;
+    background-color: rgb(106, 186, 246);
+    padding: 10px 25px;
+    
+}
+.hero button{
+    /*rounded corners*/
+    border-radius: 15px;
+    border-style: none;
+}
+
+.hero h2{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-transform: uppercase;
+    text-wrap: wrap;
+}
+
+header{
+    background-color: rgb(64, 63, 63);
+   
+}
+header {
+    color: rgb(192, 42, 127);
+    font-family: "Kaushan Script", cursive, "Times New Roman", serif;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+
+.hero p{
+    font-family: "Kaushan Script", serif;
+
+}
+
+main{
+    font-family: Helvetica, Arial, sans-serif;
+    
+
+}
+
+nav a {
+    color: white;
+    display: block; 
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 1rem 0;
+    text-decoration: none;
+}
+
+/*add solid line underneath*/
+nav li{
+    border-bottom: 1px solid #777474;
+}
+
+/*remove dots*/
+nav ul{
+    list-style: none;
+    padding-left: 0;
+}
+.portfolio{
+    display: grid;
+    background-color: #c4c3c3;
+    text-align: center;
+    padding: 3rem;
+}
+.portfolio h3{
+    font-size: large;
+    margin-bottom: 1rem;
+}
+
+.portfolio img{
+    width: 100%;
+}
+
+.portfolio p{
+    margin-top: 0%;
+    color: rgb(74, 73, 73);
+}
+
+
+.services{
+    text-align: center;
+}
+
+.services button{
+    background-color: maroon;
+    color: white;
+    padding: 1rem 2rem; 
+    border-radius: 15px;
+    border-style: none;
+}
+
+
+.servicesCards1{
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+.servicesCards2{
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+.servicesCards3{
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+
+.servicesOffered{
+    padding: 2rem;
+    margin: 2rem;
+}
+
+
+/*medium screen size*/
+@media (min-width: 936px){
+       
+    .hero button{
+
+        margin-top: 1.5rem;
+        /*square corners*/
+        border-radius: 2px;
+        /*make button slightly bigger*/
+        font-size: 1.5rem;
+    }
+   
+
+    .hero h2{
+        font-size: 3rem;
+        margin: 0;
+    }
+    
+    
+
+    .hero p{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    
+    .foodcards{
+        display: grid;
+        grid-template-columns: repeat( 2, 1fr );
+        /* puts in 2 column size for medium */
+     }
+ 
+     footer{
+         display: flex;
+         /* justify-content: space-between;*/
+         align-items:first baseline; 
+         margin-top: 1rem;
+     }
+     footer p{
+         margin-right: auto;
+         padding-left: 1rem;
+     }
+     footer a{
+         /*padding in between links*/
+         padding-left: 1rem;
+         padding-right: 1rem;
+     }
+     .logo {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav li {
+        border-bottom: none;
+        display: inline-block;
+    }
+    nav a {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .servicesCards{
+        display: flex;
+        /*makes cards horizontal*/
+    }
+
+    .portfolio_text{
+        padding-bottom: 3rem;
+    }
+
+    
+}
+
+/*large screen size 1428*/ 
+@media(min-width: 1428px){
+    /* only add the portfolio into grids */
+    .foodcards{
+        display: grid;
+        grid-template-columns: repeat( 3, 1fr );
+       /* puts in 3 column size for large */
+    }
+
+
+ }
+ 
